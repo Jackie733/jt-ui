@@ -32,6 +32,7 @@
     "@storybook/addon-interactions": "^8.0.8",
     "@storybook/addon-links": "^8.0.8",
     "@storybook/addon-onboarding": "^8.0.8",
+    "@storybook/addon-styling-webpack": "^1.0.0",
     "@storybook/addon-webpack5-compiler-swc": "^1.0.2",
     "@storybook/blocks": "^8.0.8",
     "@storybook/react": "^8.0.8",
@@ -39,6 +40,7 @@
     "@storybook/test": "^8.0.8",
     "@types/react": "^18.2.78",
     "postcss": "^8.4.38",
+    "postcss-loader": "^8.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^4.14.2",
@@ -53,6 +55,7 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "classnames": "^2.5.1"
+    "classnames": "^2.5.1",
+    "tailwindcss": "^3.4.3"
   }
 }

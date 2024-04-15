@@ -39,9 +39,9 @@ const Button = ({
     <button
       type="button"
       className={classNames(
-        'storybook-button',
-        `storybook-button--${size}`,
-        `storybook-button--${type}`
+        'tsien-button',
+        `tsien-button--${size}`,
+        `tsien-button--${type}`
       )}
       style={textColor ? { color: textColor } : {}}
       onClick={onClick}
