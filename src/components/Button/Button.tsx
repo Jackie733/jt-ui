@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import './button.css';
+import styled from 'styled-components';
 
 export interface ButtonProps {
   /**
@@ -25,9 +26,19 @@ export interface ButtonProps {
   onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 
-/**
- * Primary UI component for user interaction
- */
+const Btn = styled.button`
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover {
+    background-color: #0056b3;
+  }
+`;
+
 const Button = ({
   type = 'primary',
   textColor,
@@ -36,18 +47,13 @@ const Button = ({
   label
 }: ButtonProps) => {
   return (
-    <button
+    <Btn
       type="button"
-      className={classNames(
-        'storybook-button',
-        `storybook-button--${size}`,
-        `storybook-button--${type}`
-      )}
       style={textColor ? { color: textColor } : {}}
       onClick={onClick}
     >
       {label}
-    </button>
+    </Btn>
   );
 };
 
